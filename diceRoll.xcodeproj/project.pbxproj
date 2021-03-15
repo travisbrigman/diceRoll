@@ -13,6 +13,9 @@
 		0F8BDAF225FFB718008A5D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8BDAF125FFB718008A5D70 /* Assets.xcassets */; };
 		0F8BDAF525FFB718008A5D70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8BDAF425FFB718008A5D70 /* Preview Assets.xcassets */; };
 		0F8BDAF825FFB718008A5D70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8BDAF625FFB718008A5D70 /* LaunchScreen.storyboard */; };
+		0F8BDB0025FFC0A2008A5D70 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8BDAFF25FFC0A2008A5D70 /* MainTabView.swift */; };
+		0F8BDB0225FFC0B2008A5D70 /* PastRollsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8BDB0125FFC0B2008A5D70 /* PastRollsView.swift */; };
+		0F8BDB0425FFE5F6008A5D70 /* DiceRolls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8BDB0325FFE5F6008A5D70 /* DiceRolls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0F8BDAF425FFB718008A5D70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F8BDAF725FFB718008A5D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F8BDAF925FFB718008A5D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F8BDAFF25FFC0A2008A5D70 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		0F8BDB0125FFC0B2008A5D70 /* PastRollsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastRollsView.swift; sourceTree = "<group>"; };
+		0F8BDB0325FFE5F6008A5D70 /* DiceRolls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRolls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				0F8BDAEB25FFB715008A5D70 /* AppDelegate.swift */,
 				0F8BDAED25FFB715008A5D70 /* SceneDelegate.swift */,
 				0F8BDAEF25FFB715008A5D70 /* ContentView.swift */,
+				0F8BDB0325FFE5F6008A5D70 /* DiceRolls.swift */,
+				0F8BDAFF25FFC0A2008A5D70 /* MainTabView.swift */,
+				0F8BDB0125FFC0B2008A5D70 /* PastRollsView.swift */,
 				0F8BDAF125FFB718008A5D70 /* Assets.xcassets */,
 				0F8BDAF625FFB718008A5D70 /* LaunchScreen.storyboard */,
 				0F8BDAF925FFB718008A5D70 /* Info.plist */,
@@ -148,7 +157,10 @@
 			files = (
 				0F8BDAEC25FFB715008A5D70 /* AppDelegate.swift in Sources */,
 				0F8BDAEE25FFB715008A5D70 /* SceneDelegate.swift in Sources */,
+				0F8BDB0025FFC0A2008A5D70 /* MainTabView.swift in Sources */,
 				0F8BDAF025FFB715008A5D70 /* ContentView.swift in Sources */,
+				0F8BDB0225FFC0B2008A5D70 /* PastRollsView.swift in Sources */,
+				0F8BDB0425FFE5F6008A5D70 /* DiceRolls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
