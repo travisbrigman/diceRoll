@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var dieOne = 0
     @State private var dieTwo = 0
-    @ObservedObject var diceRolls = DiceRolls()
+    @ObservedObject var diceRolls: DiceRolls
 
     
     var body: some View {
@@ -31,12 +31,13 @@ struct ContentView: View {
 
         dieOne = dice1
         dieTwo = dice2
-        diceRolls.multipleDiceRolls.append(singleDiceRoll(dice1: dice1, dice2: dice2))
+        diceRolls.multipleDiceRolls.append(SingleDiceRoll(dice1: dice1, dice2: dice2))
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(diceRolls: DiceRolls())
     }
 }

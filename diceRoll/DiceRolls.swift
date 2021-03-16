@@ -8,16 +8,14 @@
 
 import SwiftUI
 
-struct singleDiceRoll: Identifiable, Codable, Hashable {
+struct SingleDiceRoll: Identifiable, Codable, Hashable {
     let id = UUID()
     let dice1: Int
     let dice2: Int
 }
 
-
-// what needs to change about this??
 class DiceRolls: ObservableObject {
-    @Published var multipleDiceRolls: [singleDiceRoll]
+    @Published var multipleDiceRolls: [SingleDiceRoll]
     
     init() {
         multipleDiceRolls = []

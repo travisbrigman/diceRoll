@@ -9,19 +9,21 @@
 import SwiftUI
 
 struct PastRollsView: View {
-    @ObservedObject var diceRolls = DiceRolls()
+    @ObservedObject var diceRolls: DiceRolls
     var body: some View {
         List {
-            ForEach(diceRolls.multipleDiceRolls, id: \.self) { roll in
+            ForEach(diceRolls.multipleDiceRolls) { roll in
                 Text("Foo \(roll.dice1)")
             }
         }
-        }
     }
+}
 
 
-//struct PastRollsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PastRollsView(diceRolls: [singleDiceRoll(dice1: 1, dice2: 2)])
-//    }
-//}
+struct PastRollsView_Previews: PreviewProvider {
+    static var previews: some View {
+        PastRollsView(diceRolls: DiceRolls())
+    }
+}
+
+

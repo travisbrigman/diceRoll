@@ -13,10 +13,10 @@ enum Tab {
 
 struct MainTabView: View {
     @State private var selectedTab = Tab.rollView
-    @ObservedObject var diceRolls = DiceRolls()
+    @ObservedObject var diceRolls: DiceRolls
     var body: some View {
         TabView {
-            ContentView()
+            ContentView(diceRolls: DiceRolls())
                 .tabItem {
                     Image(systemName: "gamecontroller")
                     Text("Roll Dice")
@@ -36,6 +36,6 @@ struct MainTabView: View {
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
+        MainTabView(diceRolls: DiceRolls())
     }
 }
